@@ -8,5 +8,9 @@ console.log(school2);
 let school3 = school.substring(4,5);
 console.log(school3);
 
-let school4 = school.trim;
+let school4 = school.trimEnd;
 console.log(school4);
+
+let city = "istanbul"; 
+console.log(city.toLocaleUpperCase('tr-TR'));
+

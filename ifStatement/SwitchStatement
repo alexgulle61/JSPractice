@@ -1,0 +1,50 @@
+// Switch statement
+let day = 8;
+let dayName; 
+
+switch (day) {
+    case 1:
+        dayName = "Monday";
+        break;
+    case 2:
+        dayName = "Tuesday";
+        break;
+    case 3:
+        dayName = "Wednesday";
+        break;
+    case 4:
+        dayName = "Thursday";
+        break;
+    case 5:
+        dayName = "Friday";
+        break;
+    case 6:
+        dayName = "Saturday";
+        break;
+    case 7:
+        dayName = "Sunday";
+        break;
+    default:
+        dayName = "Invalid day"
+        break;
+}
+
+console.log("Today's day: " + dayName); 
+
+//--------------
+
+let fruit = "peach";
+let message; 
+
+switch (fruit) {
+    case "apple":
+        console.log("You chose an apple")
+        break;
+    case "banana":
+        console.log("You chose a banana")
+        break;
+    case "pear":
+        console.log("You choose a pear")
+    default:
+    
+}
