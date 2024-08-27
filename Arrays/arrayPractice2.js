@@ -8,7 +8,8 @@ console.log(classes);
 
 console.log(classes.at(3)); //at() returns the value from given index
 
-classes.pop();
+let removedItem = classes.pop();
+console.log(removedItem);
 console.log(classes); //pop() removes the last element from the array
 
 classes.push("cypress"); //it will add new value to the end of the array
@@ -29,3 +30,8 @@ console.log(classes); //sort() sort element in alphabetically
 console.log(classes.indexOf("math")); //returns the index value of the element
 
 console.log(classes.includes("math"));
+
+let age;
+/*
+    console.log(age); 
+*/

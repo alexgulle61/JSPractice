@@ -6,6 +6,7 @@
     const names = [];
     names[0] = 'david';
     names[2] = 'osman';
+    names[4] = 'bheem';
 
     console.log(names);
 

@@ -1,0 +1,16 @@
+LOOPS
+
+for (initialize ; condition ; unaryOperator){
+    //body
+}
+
+1- initialize
+2- condition --> true
+3- body 
+4- unaryOperator
+5- condition --> true
+6- body
+7- unaryOperator
+
+break;      -> once it is executed the nearest loop will stop running
+continue;   -> once it is executed the nearest loop will skip the current iteration 
