@@ -1,7 +1,5 @@
-for(let i=0; i<=10; i++){
-    if(i==5){
-        continue;
-    }
-    console.log(i);
-    
-}
+let i = 1;
+do {
+    console.log("do-while");
+    i++;
+}while(i<1);
