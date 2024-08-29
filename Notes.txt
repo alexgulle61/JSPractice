@@ -11,6 +11,47 @@ for (initialize ; condition ; unaryOperator){
 5- condition --> true
 6- body
 7- unaryOperator
+8- condition --> false
+9- loop will stop
 
 break;      -> once it is executed the nearest loop will stop running
 continue;   -> once it is executed the nearest loop will skip the current iteration 
+
+FUNCTIONS
+1- We need to use the function keyword while creating the methods in js file
+2- We do not need to provide data types when we give the parameter
+    function sum (num1, num2){
+        return num1 + num2;
+    }
+
+    console.log(sum(3 + 5));
+
+3- If we do not return anything from function, we do NOT put void in definition 
+    // c# 
+        public void add(num1, num2){
+        print.WriteLine(3,5);
+        }
+    // Java 
+        public void add(num1, num2){
+        system.out.println(3,5);
+        }
+    // JavaScript
+        function add(num1, num2){
+        console.log(num1+num2);
+        }
+
+4- If we return anything from function, we do NOT put the return type in definition
+     // c# 
+        public int add(num1, num2){
+        return num1 + num2;
+        }
+    // Java 
+        public int add(num1, num2){
+        return num1 + num2;
+        }
+    // JavaScript
+        function add(num1, num2){
+        return num1 + num2
+        }
+
+    

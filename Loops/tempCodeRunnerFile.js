@@ -1,5 +1,6 @@
-let i = 1;
-do {
-    console.log("do-while");
-    i++;
-}while(i<1);
+let n = 20;
+
+while (n >= 1) {
+    console.log(n);
+    n -= 3;
+}
