@@ -1,2 +1,2 @@
-let age;
-console.log(age);
+let hello = "Hello World";
+console.log(hello.split("e"));

@@ -54,6 +54,7 @@ console.log("Is Apple in the array? " + hasApple);
 let hasGrape = fruits.includes("Grapes");
 console.log("Is Grapes in the array? " + hasGrape); 
 
-//we will be back at 9.25am  
+let hello = "Hello World";
+console.log(hello.split("e"));
 
 
