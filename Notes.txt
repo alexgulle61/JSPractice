@@ -54,4 +54,40 @@ FUNCTIONS
         return num1 + num2
         }
 
+------------------------------------------------------------------
+Objects
+1- We do not need to have classes to create an object in js
+    test.js
+        let person1 = {
+            name: 'Mark',
+            age: 10,
+            multiple: function(a,b){
+                return a*b;
+            }
+        }
+
+classes
+Classes are blueprints of the objects. Using classes, we can create multiple objects.
+
+1- Classes starts with class keyword in js
+2- We need to have the class name
+3- We can only have one constructor inside the class
+4- We cannot use function keyword to create the function in class
+
+class Person{
+    name,
+    age
     
+    constructor (name, age){
+        this.name = name; //this.name -> class varible
+        this.age = age; //this.age -> class variable
+    }
+
+    multiple(a,b){
+        return a*b;
+    }
+}
+
+let person1 = new Person("David", 16);
+let person2 = new Person("Jessica", 19);
+console.log(person1.multiple(a,b));

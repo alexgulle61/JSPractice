@@ -79,7 +79,8 @@ findLongestWord(["apple",  "banana",  "grapefruit", "pear"]); // Output: "grapef
 
 /*
 Problem 3: Filter Even Numbers from an Array
-Description: Write a function named filterEvenNumbers that takes an array of numbers as input and returns a new array containing only the even numbers from the original array.
+Description: Write a function named filterEvenNumbers that takes an array of numbers as input 
+and returns a new array containing only the even numbers from the original array.
 Suggestions:
     •    Use a loop to iterate through the array of numbers.
     •    Use the modulus operator (%) to check if a number is even.
@@ -89,6 +90,19 @@ Example:
 filterEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);   // Output: [2, 4, 6, 8, 10]
 */
 
+function filterEvenNumbers(numbers){
+    let evenNumbers = []; //Initialize an empty array for even numbers
+
+    for(let i = 0; i<numbers.length; i++){
+        //check if the number is even
+        if(numbers[i] % 2 === 0){
+            evenNumbers.push(numbers[i]); //Add even numbers to the new array
+        }
+    }
+    return evenNumbers;
+}
+
+console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14])); 
 
 /*
 Problem 4: Capitalize the Whole Word if Word Length is Greater Than 4
@@ -104,5 +118,4 @@ capitalizeLongWords("javascript is fun to learn");
 // Output: "JAVASCRIPT is fun to LEARN"
 */
 
-//Be back at 9:15am
 

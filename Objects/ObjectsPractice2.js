@@ -32,8 +32,10 @@ console.log(car1.getCarInfo());
 console.log(car2.getCarInfo());
 console.log(car3.getCarInfo());
 
+let brand = 'toyota'; //local variable
 class Car{
     //Defining variables(properties) with constructor
+    brand = 'toyota'; // class variable -> parameter
     constructor(brand, model, year, owner){
         this.brand = brand;
         this.model = model;
