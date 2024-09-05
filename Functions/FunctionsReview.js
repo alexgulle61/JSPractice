@@ -90,23 +90,24 @@ Example:
 filterEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);   // Output: [2, 4, 6, 8, 10]
 */
 
-function filterEvenNumbers(numbers){
-    let evenNumbers = []; //Initialize an empty array for even numbers
+// function filterEvenNumbers(numbers){
+//     let evenNumbers = []; //Initialize an empty array for even numbers
 
-    for(let i = 0; i<numbers.length; i++){
-        //check if the number is even
-        if(numbers[i] % 2 === 0){
-            evenNumbers.push(numbers[i]); //Add even numbers to the new array
-        }
-    }
-    return evenNumbers;
-}
+//     for(let i = 0; i<numbers.length; i++){
+//         //check if the number is even
+//         if(numbers[i] % 2 === 0){
+//             evenNumbers.push(numbers[i]); //Add even numbers to the new array
+//         }
+//     }
+//     return evenNumbers;
+// }
 
-console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14])); 
+// console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14])); 
 
 /*
 Problem 4: Capitalize the Whole Word if Word Length is Greater Than 4
-Description: Write a function named capitalizeLongWords that takes a string as input and returns a new string where every word with a length greater than 4 is fully capitalized.
+Description: Write a function named capitalizeLongWords that takes a string as input 
+and returns a new string where every word with a length greater than 4 is fully capitalized.
 Suggestions:
     •    Use the .split() method to split the string into an array of words.
     •    Use a loop to iterate through the array of words.
@@ -118,4 +119,26 @@ capitalizeLongWords("javascript is fun to learn");
 // Output: "JAVASCRIPT is fun to LEARN"
 */
 
+function capitalizeLongWords(str){
+    let wordArray = str.split(", "); //convert to array -> ["javascript", " is", " fun", " to", " learn"]
+
+    for(let i = 0; i < wordArray.length; i++){
+        if(wordArray[i].length > 4){
+            wordArray[i] = wordArray[i].toUpperCase();
+        }
+    }
+    let capitalizedString = wordArray.join(", "); //convert back to string from array
+
+    return capitalizedString;
+}
+
+console.log(capitalizeLongWords("javascript, is, fun, to, learn")); //JAVASCRIPT is fun to LEARN
+
+
+// String = "Chris, Steven, John, Robert"; 
+// out = "C, J, R, S" 
+        // array 
+        // split(", " )
+        // sort();
+        // join(", ")
 

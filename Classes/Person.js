@@ -16,10 +16,10 @@ class person{
         return this.#loginName;
     }
 
-    setPassword(password){
+    set Password(password){
         this.#password = password;
     }
-    getPassword(){
+    get Password(){
         return this.#password;
     }
 

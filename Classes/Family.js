@@ -26,7 +26,7 @@ person2.eat(1);
 // console.log(person1.familyName);
 // console.log(person2);
 // console.log(Family.familyName);
-// //console.log(Family.tomato); // 7 
+console.log(Family.tomato); // 7 
 console.log(Family.sayGoodMorning());
 
 module.exports = Family; //make sure you put export command end of the module
