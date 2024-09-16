@@ -12,7 +12,7 @@ let person = {
         console.log(this.age);
     }
 }
-
+console.log(person['firstName']);
 // console.log(person.firstName);
 // console.log(person.lastName);
 // console.log(person.whatAge(5));

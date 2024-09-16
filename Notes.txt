@@ -91,3 +91,33 @@ class Person{
 let person1 = new Person("David", 16);
 let person2 = new Person("Jessica", 19);
 console.log(person1.multiple(a,b));
+
+
+STATIC 
+class Family {
+    static tomato = 10; //since it is static varibale, it is shared among all instances
+    #potato //private variable
+    
+    constructor(name){
+        this.name = name;
+    }
+
+    eat(number){
+        Family.tomato -= number; 
+    }
+}
+
+let p1 = new Family("David");
+p1.eat(2);
+let p2 = new Family("Osman");
+p2.eat(3);
+console.log(Family.tomato); //5
+
+Note:
+1- Static means belongs to the class
+2- Local variables (variables inside the method) cannot be static
+3- We can call static variable inside the non static Function
+    using class name : ClassName.staticVariable
+                        Family.tomato;
+
+                        
